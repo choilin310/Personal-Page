@@ -7,10 +7,60 @@ const Contact = () => {
       <span className="section__subtitle">Contact Me</span>
 
       <div className="contact__container container grid">
-        <div className="container__content">
+        <div className="contact__content">
           <h3 className="contact__title">Talk to me</h3>
 
           <div className="contact__info">
+            <div className="contact__card">
+              <i className="bx bx-mail-send contact__card-icon"></i>
+
+              <h3 className="contact__card-title">Email</h3>
+              <span className="contact__card-data">choiinhwan0@gmail.com</span>
+
+              <a href="mailto:choiinhwan0@gmail.com.com" className="contact__button">
+                Write me{" "}
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+
+            <div className="contact__card">
+              <i className="bx bxl-whatsapp contact__card-icon"></i>
+
+              <h3 className="contact__card-title">whatsapp</h3>
+              <span className="contact__card-data">201-988-8726</span>
+
+              <a href="" className="contact__button">
+                Write me{" "}
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+
+            <div className="contact__card">
+              <i className="bx bxl-messenger contact__card-icon"></i>
+
+              <h3 className="contact__card-title">messenger</h3>
+              <span className="contact__card-data">user.fb123</span>
+
+              <a href="" className="contact__button">
+                Write me{" "}
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="contact__content">
+          <h3 className="contact__title">Write me your projects</h3>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
+
+{
+  /* <div className="contact__info">
             <div className="contact__card">
               <i className="bx bx contact__card-icon"></i>
 
@@ -46,15 +96,5 @@ const Contact = () => {
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
-          </div>
-        </div>
-
-        <div className="container__content">
-          <h3 className="contact__title">Write me your projects</h3>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Contact;
+          </div> */
+}
