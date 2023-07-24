@@ -1,7 +1,8 @@
 import Image1 from "../../assets/Reference1.jpg";
 import Image2 from "../../assets/reference2.jpg";
 import Image3 from "../../assets/reference3.jpg";
-import Image4 from "../../assets/reference4.jpg"
+import Image4 from "../../assets/reference4.jpg";
+import Image5 from "../../assets/reference5.jpeg";
 
 export const Data = [
   {
@@ -36,14 +37,16 @@ export const Data = [
     image: Image4,
     title: "Jakub Roszkowski",
     contact: "Cyber Security Analyst",
-    description: "Inhwan exhibits a natural leadership flair, inspiring and motivating colleagues to achieve shared objectives. "
+    description:
+      "Inhwan exhibits a natural leadership flair, inspiring and motivating colleagues to achieve shared objectives. ",
   },
 
   {
     id: 5,
-    image: Image1,
+    image: Image5,
     title: "Grace Gu",
     contact: "Mental Health Counselor",
-    description: "da",
-  }
+    description:
+      "I have known Inhwan for 10 years and he most definitely displays as one of the most hardworking and motivated person in my life. I have experienced an individual who not only carries intellect but also humbleness and resilience. I believe his combination of skills and personality will make a great asset to the future.",
+  },
 ];
