@@ -7,7 +7,7 @@ import Skills from "./components/skills/Skills";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from './components/footer/Footer';
-import ScrollUp from "./components/home/ScrollDown";
+import ScrollUp from "./components/scrollup/ScrollUp";
 
 function App() {
   return (
