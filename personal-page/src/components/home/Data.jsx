@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../App";
 
 const Data = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <div className="home__data">
       <h1 className="home__title">
@@ -57,30 +59,92 @@ const Data = () => {
       </h1>
       <h3 className="home__subtitle">Fullstack Engineer</h3>
       <p className="home__description">
-        I'm a fullstack engineer based in New Jersey, and I'm very passionate
-        and dedicated to my work.
+        A full-stack developer who is capable of designing, developing, and
+        maintaining both the front-end and back-end components of web
+        applications.
       </p>
 
-      <a href="contact" className="button button--flex">
-        Say Hello
+      <input
+        className="dark_mode_input"
+        type="checkbox"
+        id="darkmode-toggle"
+        onChange={toggleTheme}
+        checked={theme === "dark"}
+      />
+      <label htmlFor="darkmode-toggle">
         <svg
-          className="button__icon"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          className="sun"
+          width="800px"
+          height="800px"
           viewBox="0 0 24 24"
           fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="12" cy="12" r="6" stroke="#1C274C" strokeWidth="1.5" />
+          <path
+            d="M12 2V3"
+            stroke="#1C274C"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+          <path
+            d="M12 21V22"
+            stroke="#1C274C"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+          <path
+            d="M22 12L21 12"
+            stroke="#1C274C"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+          <path
+            d="M3 12L2 12"
+            stroke="#1C274C"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+          <path
+            d="M19.0708 4.92969L18.678 5.32252"
+            stroke="#1C274C"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+          <path
+            d="M5.32178 18.6777L4.92894 19.0706"
+            stroke="#1C274C"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+          <path
+            d="M19.0708 19.0703L18.678 18.6775"
+            stroke="#1C274C"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+          <path
+            d="M5.32178 5.32227L4.92894 4.92943"
+            stroke="#1C274C"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+          />
+        </svg>
+
+        <svg
+          className="moon"
+          width="800px"
+          height="800px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M14.2199 21.9352C13.0399 21.9352 11.3699 21.1052 10.0499 17.1352L9.32988 14.9752L7.16988 14.2552C3.20988 12.9352 2.37988 11.2652 2.37988 10.0852C2.37988 8.91525 3.20988 7.23525 7.16988 5.90525L15.6599 3.07525C17.7799 2.36525 19.5499 2.57525 20.6399 3.65525C21.7299 4.73525 21.9399 6.51525 21.2299 8.63525L18.3999 17.1252C17.0699 21.1052 15.3999 21.9352 14.2199 21.9352ZM7.63988 7.33525C4.85988 8.26525 3.86988 9.36525 3.86988 10.0852C3.86988 10.8052 4.85988 11.9052 7.63988 12.8252L10.1599 13.6652C10.3799 13.7352 10.5599 13.9152 10.6299 14.1352L11.4699 16.6552C12.3899 19.4352 13.4999 20.4252 14.2199 20.4252C14.9399 20.4252 16.0399 19.4352 16.9699 16.6552L19.7999 8.16525C20.3099 6.62525 20.2199 5.36525 19.5699 4.71525C18.9199 4.06525 17.6599 3.98525 16.1299 4.49525L7.63988 7.33525Z"
-            fill="var(--container-color)"
-          ></path>
-          <path
-            d="M10.11 14.7052C9.92005 14.7052 9.73005 14.6352 9.58005 14.4852C9.29005 14.1952 9.29005 13.7152 9.58005 13.4252L13.16 9.83518C13.45 9.54518 13.93 9.54518 14.22 9.83518C14.51 10.1252 14.51 10.6052 14.22 10.8952L10.64 14.4852C10.5 14.6352 10.3 14.7052 10.11 14.7052Z"
-            fill="var(--container-color)"
-          ></path>
+            d="M21.0672 11.8568L20.4253 11.469L21.0672 11.8568ZM12.1432 2.93276L11.7553 2.29085V2.29085L12.1432 2.93276ZM21.25 12C21.25 17.1086 17.1086 21.25 12 21.25V22.75C17.9371 22.75 22.75 17.9371 22.75 12H21.25ZM12 21.25C6.89137 21.25 2.75 17.1086 2.75 12H1.25C1.25 17.9371 6.06294 22.75 12 22.75V21.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75V1.25C6.06294 1.25 1.25 6.06294 1.25 12H2.75ZM15.5 14.25C12.3244 14.25 9.75 11.6756 9.75 8.5H8.25C8.25 12.5041 11.4959 15.75 15.5 15.75V14.25ZM20.4253 11.469C19.4172 13.1373 17.5882 14.25 15.5 14.25V15.75C18.1349 15.75 20.4407 14.3439 21.7092 12.2447L20.4253 11.469ZM9.75 8.5C9.75 6.41182 10.8627 4.5828 12.531 3.57467L11.7553 2.29085C9.65609 3.5593 8.25 5.86509 8.25 8.5H9.75ZM12 2.75C11.9115 2.75 11.8077 2.71008 11.7324 2.63168C11.6686 2.56527 11.6538 2.50244 11.6503 2.47703C11.6461 2.44587 11.6482 2.35557 11.7553 2.29085L12.531 3.57467C13.0342 3.27065 13.196 2.71398 13.1368 2.27627C13.0754 1.82126 12.7166 1.25 12 1.25V2.75ZM21.7092 12.2447C21.6444 12.3518 21.5541 12.3539 21.523 12.3497C21.4976 12.3462 21.4347 12.3314 21.3683 12.2676C21.2899 12.1923 21.25 12.0885 21.25 12H22.75C22.75 11.2834 22.1787 10.9246 21.7237 10.8632C21.286 10.804 20.7293 10.9658 20.4253 11.469L21.7092 12.2447Z"
+            fill="#1C274C"
+          />
         </svg>
-      </a>
+      </label>
     </div>
   );
 };

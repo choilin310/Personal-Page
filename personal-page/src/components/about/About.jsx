@@ -17,7 +17,11 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-          As a junior front-end developer, I am a passionate and dedicated professional looking to kickstart my career web development. While I may have limited professional experience, I possess a deep understanding of front-end technologies, and a genuine eagerness to learn and grow.
+            As a junior front-end developer, I am a passionate and dedicated
+            professional looking to kickstart my career web development. While I
+            may have limited professional experience, I possess a deep
+            understanding of front-end technologies, and a genuine eagerness to
+            learn and grow.
           </p>
 
           <a download="" href={CV} className="button button--flex">

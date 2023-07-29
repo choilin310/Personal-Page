@@ -43,6 +43,7 @@
     margin-bottom: var(--mb-1);
 }
 
+
 .home__subtitle::before {
     content: '';
     position: absolute;
@@ -69,6 +70,18 @@
     width: 300px;
     height: 300px;
     animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+/* dark mode css */
+#dark .home__title{
+    color: #F2F4F3;
+}
+
+#dark .home__subtitle, 
+#dark .home__description,
+#dark .home__scroll-name,
+#dark .home__social-icon {
+    color: #F2F4F3;
 }
 
 @keyframes profile__animate {

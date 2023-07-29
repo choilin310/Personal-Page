@@ -72,6 +72,11 @@
   transform: translateX(0.25rem);
 }
 
+/* dark mode css */
+#dark .demo {
+  color: black;
+}
+
 /* active work */
 
 .active-work {

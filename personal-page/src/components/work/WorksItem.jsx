@@ -6,7 +6,9 @@ const WorkItems = ({ item }) => {
       <img src={item.image} alt="" className="work__img" />
       <h3 className="work__title">{item.title}</h3>
       <a href="#" className="work__button">
+        <div className="demo">
         Demo <i className="bx bx-right-arrow-alt work__button-icon"></i>
+        </div>
       </a>
     </div>
   );

@@ -44,6 +44,13 @@
     margin-bottom: var(--mb-2-5);
 }
 
+/* about dark mode css */
+#dark .about__description,
+#dark .section__title,
+#dark .section__subtitle {
+    color: #F2F4F3;
+}
+
 @media screen and (max-width: 992px) {
     .about__container {
         grid-template-columns: 1fr;

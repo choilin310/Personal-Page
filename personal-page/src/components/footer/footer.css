@@ -55,6 +55,11 @@
     font-size: var(--smaller-font-size);
 }
 
+
+/* dark mode css */
+#dark .footer__title {
+    color: #F2F4F3;
+}
 @media screen and (max-width: 992px) {
     .footer__social-link {
         padding: 0.25rem;
