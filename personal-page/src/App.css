@@ -243,6 +243,10 @@ label svg.sun {
   transition: 0.3s;
 }
 
+#dark svg.sun {
+  fill: none;
+}
+
 label svg.moon {
   left: 213px;
   fill: #7e7e7e;
